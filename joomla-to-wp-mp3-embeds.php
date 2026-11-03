@@ -7,6 +7,8 @@
  * Author:      teoli
  * Author URI:  https://github.com/theyo-tester
  * Text Domain: joomla-to-wp-mp3-embeds
+ * Requires at least: 5.0
+ * Requires PHP: 7.4
  */
 
 add_filter( 'the_content', 'mysite_render_legacy_mp3_embeds', 8 );
