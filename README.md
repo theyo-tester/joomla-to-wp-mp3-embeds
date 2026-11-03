@@ -1,6 +1,6 @@
 # Legacy MP3 Remote Embeds for WordPress
 
-A lightweight WordPress plugin designed to seamlessly render legacy Joomla audio tags (`{mp3remote}...{/mp3remote}`) as native WordPress audio players—**without requiring any database modifications or manual post editing.**
+A lightweight WordPress plugin designed to seamlessly render legacy Joomla audio tags (`{mp3remote}...{/mp3remote}` or just `{mp3}...{/mp3}`) as native WordPress audio players—**without requiring any database modifications or manual post editing.**
 
 ## Overview
 
