@@ -1,8 +1,10 @@
 <?php
 /**
- * Plugin Name: Legacy MP3 Remote Embeds
- * Description: Renders legacy {mp3remote}...{/mp3remote} tags as WordPress audio blocks on single posts and blog views.
- * Version: 1.1.0
+ * Plugin Name: Legacy MP3 & MP3 Remote Embeds
+ * Description: Renders legacy {mp3}...{/mp3} and {mp3remote}...{/mp3remote} tags as WordPress audio blocks.
+ * Version: 1.2.0
+ * Author: teoli
+ * Author URI:https://github.com/theyo-tester
  */
 
 add_filter( 'the_content', 'mysite_render_legacy_mp3_embeds', 8 );
@@ -13,15 +15,18 @@ function mysite_render_legacy_mp3_embeds( $content ) {
         return $content;
     }
 
+    // Matches both {mp3}...{/mp3} and {mp3remote}...{/mp3remote}
     return preg_replace_callback(
-        '~\{mp3remote\}(.*?)\{/mp3remote\}~is',
+        '~\{(mp3|mp3remote)\}(.*?)\{\/\1\}~is',
         'mysite_render_one_legacy_mp3_embed',
         $content
     );
 }
 
 function mysite_render_one_legacy_mp3_embed( $matches ) {
-    $url = trim( $matches[1] );
+    // $matches[1] contains the tag type (mp3 or mp3remote)
+    // $matches[2] contains the file path or URL inside the tags
+    $url = trim( $matches[2] );
 
     // Sanitize the URL/file path safely.
     $url = esc_url( $url );
