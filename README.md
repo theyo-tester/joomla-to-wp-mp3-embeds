@@ -20,3 +20,21 @@ Instead of leaving broken text or forcing you to run complex database search-and
 ### Legacy Joomla Tag (In Post Content):
 ```text
 {mp3remote}/some/path/to/your.mp3{/mp3remote}
+```
+
+## Installation
+
+The easiest way to install the plugin is by downloading the pre-built release package:
+
+1. Go to the [Releases](https://github.com/your-username/joomla-to-wp-pdf-embeds/releases) page of this repository and download the latest `.zip` release file.
+2. Log in to your WordPress Admin dashboard.
+3. Navigate to **Plugins > Add New** (or **Plugins > Add New Plugin** depending on your WordPress version).
+4. Click the **Upload Plugin** button at the top of the screen.
+5. Choose the downloaded `.zip` file, click **Install Now**, and then click **Activate**.
+
+*(Alternatively, you can manually upload the plugin folder to your `/wp-content/plugins/` directory via FTP/SFTP and activate it from your plugins screen).*
+
+## Requirements
+
+- WordPress 5.0 or higher
+- PHP 7.4 or higher
