@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Joomla to WP MP3 Embeds
- * Plugin URI:  https://github.com/your-username/joomla-to-wp-mp3-embeds
+ * Plugin URI:  https://github.com/theyo-tester/joomla-to-wp-mp3-embeds
  * Description: Renders legacy Joomla {mp3}...{/mp3} and {mp3remote}...{/mp3remote} tags as native WordPress audio blocks.
  * Version:     1.2.0
  * Author:      teoli
