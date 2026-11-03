@@ -1,10 +1,12 @@
 <?php
 /**
- * Plugin Name: Legacy MP3 & MP3 Remote Embeds
- * Description: Renders legacy {mp3}...{/mp3} and {mp3remote}...{/mp3remote} tags as WordPress audio blocks.
- * Version: 1.2.0
- * Author: teoli
- * Author URI:https://github.com/theyo-tester
+ * Plugin Name: Joomla to WP MP3 Embeds
+ * Plugin URI:  https://github.com/your-username/joomla-to-wp-mp3-embeds
+ * Description: Renders legacy Joomla {mp3}...{/mp3} and {mp3remote}...{/mp3remote} tags as native WordPress audio blocks.
+ * Version:     1.2.0
+ * Author:      teoli
+ * Author URI:  https://github.com/theyo-tester
+ * Text Domain: joomla-to-wp-mp3-embeds
  */
 
 add_filter( 'the_content', 'mysite_render_legacy_mp3_embeds', 8 );
